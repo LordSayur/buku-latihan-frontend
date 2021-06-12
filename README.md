@@ -1,27 +1,39 @@
-# Vue 3 + Typescript + Vite
+# Buku Latihan Frontend
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+## Design pattern
 
-## Recommended IDE Setup
+Buku Latihan Frontend is using Atomic Design pattern where components are grouped as atom, molecule and organisms. These components are used to create a page.
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+## Library / Tool
 
-### If Using `<script setup>`
+- Vuejs 3
+- Vitejs
+- Tailwindcss
+- Cypress
+- Storybook
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+## Contribution
 
-## Type Support For `.vue` Imports in TS
+### Getting Started
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+1. Clone repo
+2. Checkout to development branch
+3. Install dependencies
+   `npm run install`
+4. Run the application
+   `npm run serve`
 
-### If Using Volar
+### Available Task
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- Run storybook
+  `npm run storybook`
+- Run end to end test
+  `npm run test:e2e`
+- Prettify all files
+  `npm run prettier`
 
-### If Using Vetur
+#### Recommended Visual Studio Extension
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+- Volar by Johnson Chu
+- Vite by Anthony Fu
+- Tailwind CSS IntelliSense by Brad Cornes
