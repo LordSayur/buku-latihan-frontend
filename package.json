@@ -4,6 +4,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
+    "test:ct": "npx cypress open-ct",
+    "test:e2e": "npx cypress open",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint src/**/*.{css,scss,vue}",
     "prettier": "prettier -w -u ."
@@ -23,6 +25,8 @@
     "vue-router": "^4.0.8"
   },
   "devDependencies": {
+    "@cypress/vite-dev-server": "^2.0.0",
+    "@cypress/vue": "^2.2.3",
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "@typescript-eslint/parser": "^4.26.1",
     "@vitejs/plugin-vue": "^1.2.3",
@@ -30,6 +34,7 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "autoprefixer": "^10.2.6",
+    "cypress": "^7.5.0",
     "eslint": "^7.28.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.11.0",
@@ -43,6 +48,7 @@
     "tailwindcss": "^2.1.4",
     "typescript": "^4.3.2",
     "vite": "^2.3.7",
+    "vue-template-compiler": "^2.6.14",
     "vue-tsc": "^0.0.24"
   }
 }
