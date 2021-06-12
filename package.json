@@ -4,7 +4,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore ."
+    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "prettier": "prettier -w -u ."
   },
   "husky": {
     "hooks": {
@@ -12,7 +13,8 @@
     }
   },
   "lint-staged": {
-    "*.{ts,vue}": "eslint --fix"
+    "*.{ts,vue}": "eslint --fix",
+    "*": "prettier -w -u"
   },
   "dependencies": {
     "vue": "^3.0.5"
@@ -22,11 +24,14 @@
     "@typescript-eslint/parser": "^4.26.1",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint": "^7.28.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.11.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
     "typescript": "^4.3.2",
     "vite": "^2.3.7",
     "vue-tsc": "^0.0.24"
